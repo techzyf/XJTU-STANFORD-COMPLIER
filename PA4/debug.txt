@@ -1,0 +1,13 @@
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 cool-tree.cc | sed '\''s/\(cool-tree\.o\)[ :]*/\1 cool-tree.d : /g'\'' > cool-tree.d'
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 tree.cc | sed '\''s/\(tree\.o\)[ :]*/\1 tree.d : /g'\'' > tree.d'
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 dumptype.cc | sed '\''s/\(dumptype\.o\)[ :]*/\1 dumptype.d : /g'\'' > dumptype.d'
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 stringtab.cc | sed '\''s/\(stringtab\.o\)[ :]*/\1 stringtab.d : /g'\'' > stringtab.d'
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 utilities.cc | sed '\''s/\(utilities\.o\)[ :]*/\1 utilities.d : /g'\'' > utilities.d'
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 ast-parse.cc | sed '\''s/\(ast-parse\.o\)[ :]*/\1 ast-parse.d : /g'\'' > ast-parse.d'
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 ast-lex.cc | sed '\''s/\(ast-lex\.o\)[ :]*/\1 ast-lex.d : /g'\'' > ast-lex.d'
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 handle_flags.cc | sed '\''s/\(handle_flags\.o\)[ :]*/\1 handle_flags.d : /g'\'' > handle_flags.d'
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 symtab_example.cc | sed '\''s/\(symtab_example\.o\)[ :]*/\1 symtab_example.d : /g'\'' > symtab_example.d'
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 semant-phase.cc | sed '\''s/\(semant-phase\.o\)[ :]*/\1 semant-phase.d : /g'\'' > semant-phase.d'
+/bin/sh -ec 'g++ -MM -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 semant.cc | sed '\''s/\(semant\.o\)[ :]*/\1 semant.d : /g'\'' > semant.d'
+g++ -g -Wall -Wno-unused -I. -I/home/toney/Documents/cool/include/PA4 -I/home/toney/Documents/cool/src/PA4 -DDEBUG -Wno-deprecated -c semant.cc
+Makefile:66: recipe for target 'semant.o' failed
